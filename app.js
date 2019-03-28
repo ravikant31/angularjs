@@ -1,10 +1,10 @@
-(function name() {
+(function () {
 'use strict'
     
 angular.module("myFirstApp", [])
 
-.controller("MyFirstController", function(){
-
-});
+.controller("MyFirstController", ["$scope", function($scope){
+    $scope.message = "Hello World!"
+}]);
 
 })();
